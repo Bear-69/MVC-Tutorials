@@ -23,12 +23,16 @@ namespace eCommerce.WebUI.Controllers
 
         public ActionResult Index()
         {
-            //CustomerRepository customers = new CustomerRepository(new DataContext());
-            ProductRepository products = new ProductRepository(new DataContext());
+            var productList = products.GetAll();
 
-           //  = new CustomerRepository(new DataContext());
-         
-            return View();
+            return View(productList);
+        }
+
+        public ActionResult Details(int id)
+        {
+            var product = products.GetById(id);
+
+            return View(product);
         }
 
         public ActionResult About()
