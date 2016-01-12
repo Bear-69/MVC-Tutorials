@@ -13,7 +13,7 @@ namespace eCommerce.DAL.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201601102344463_Initial"; }
+            get { return "201601121916218_Initial"; }
         }
         
         string IMigrationMetadata.Source
