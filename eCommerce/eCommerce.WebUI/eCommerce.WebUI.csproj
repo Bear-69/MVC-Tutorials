@@ -200,8 +200,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Images\GenDedines_1.jpg" />
-    <Content Include="Images\POAM.jpg" />
+    <Content Include="Images\sample_product.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -216,9 +215,7 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config">
-      <SubType>Designer</SubType>
-    </Content>
+    <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -253,6 +250,7 @@
     <Content Include="Views\Admin\EditProduct.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Details.cshtml" />
+    <Content Include="Views\Home\BasketSummary.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -276,6 +274,10 @@
     <ProjectReference Include="..\eCommerce.Model\eCommerce.Model.csproj">
       <Project>{3fd5ae06-0f44-4666-9f2c-5543d1a57533}</Project>
       <Name>eCommerce.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eCommerce.Services\eCommerce.Services.csproj">
+      <Project>{70293512-d642-4e28-9833-8be49ae3f18d}</Project>
+      <Name>eCommerce.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

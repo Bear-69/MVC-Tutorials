@@ -25,15 +25,13 @@ namespace eCommerce.WebUI.Controllers
             return View();
         }
 
-        public ActionResult ProductList()
-        {
+        public ActionResult ProductList() {
             var model = products.GetAll();
 
             return View(model);
         }
 
-        public ActionResult CreateProduct()
-        {
+        public ActionResult CreateProduct() {
             var model = new Product();
 
             return View(model);
@@ -53,6 +51,7 @@ namespace eCommerce.WebUI.Controllers
         {
             Product product = products.GetById(id);
 
+
             return View(product);
         }
 
@@ -64,5 +63,7 @@ namespace eCommerce.WebUI.Controllers
 
             return RedirectToAction("ProductList");
         }
+
+        
     }
 }
